@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/practice.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <header>
+    SIMPLE AND COMPOUND INTEREST
+  </header>
+  <nav id="top-nav">
+    <ul>
+      <li><a href="index.html">Guided discovery</a></li>
+      <li><a href="instruction-simple-interest.html">Simple interest</a></li>
+      <li><a href="instruction-compound-interest.html">Compound interest</a></li>
+      <li><a href="practice-1.html">Practice 1</a></li>
+      <li><a href="practice-2.html">Practice 2</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1>Practice: Bubble Tea and Bank Loan</h1>
+    <div id="content">
+      <p>You found that People in Pittsburgh love bubble tea very much, so you are planning to open a bubble tea shop called DRIDRI. You talked with the owner of  Kungfu Tea and got to know “you need $ 15,000 to start a bubble tea store.</p>
+      <div id="lottery-image">Bubble tea image</div>
+      <div id="question">
+        <p>You are going to loan startup money at Chase, the bank manager recommends 4 plans:</p>
+        <div id="options">
+          <button onclick="onSelectOption(this)">
+            <h1>Plan A</h1>
+            <p>Loan money at 18% per year compounded per month and pay this money back in 3 months.</p>
+          </button>
+          <button onclick="onSelectOption(this)">
+            <h1>Plan B</h1>
+            <p>Loan money at 12% per year compounded per month and pay this money back in 5 months.</p>
+          </button>
+          <button onclick="onSelectOption(this)">
+            <h1>Plan C</h1>
+            <p>Loan money at 15% per year compounded per month and pay this money back in 4 months. </p>
+          </button>
+          <button onclick="onSelectOption(this)">
+            <h1>Plan D</h1>
+            <p>Loan money at 9% per year compounded per month and pay this money back in 6 months.</p>
+          </button>
+        </div>
+        <p>For the plan you choose, you should pay final amounts: <input id="final-amount" type="number" onfocusout="updateSubmitButton()"></p>
+        <button class="disabled" id="submit-button" onclick="showFeedbackIfCompletedQuestion('feedback')">Submit</button>
+        <div id="feedback" class="feedback">
+          <p>Plan1: 18%/12=1.5%; 15000*(1+1.5%)^3=15685.2</p>
+          <p>Plan2: 12%/12=1%; 15000*(1+1%)^5=15765.2</p>
+          <p>Plan3: 15%/12=1.25%; 15000*(1+1.25%)^4=15764.2</p>
+          <p>Plan4: 9%/12=0.75%; 15000*(1+0.75%)^6=15687.8</p>
+          <p>Plan1&#60;Plan4&#60;Plan3&#60;Plan2</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav id="bottom-nav">
+    <ul>
+      <li><a href="practice-1.html">Previous page</a></li>
+      <li><a href="congradulations.html">Next page</a></li>
+    </ul>
+  </nav>
+  <script src="js/common.js"></script>
+  <script src="js/practice.js"></script>
+</body>
+</html>

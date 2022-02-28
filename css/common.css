@@ -1,0 +1,19 @@
+body {
+  margin: 54px 150px 0;
+}
+
+nav ul {
+  display:inline;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav li {
+  display:inline;
+}
+
+.feedback {
+  display: none;
+}

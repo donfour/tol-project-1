@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/practice.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <header>
+    SIMPLE AND COMPOUND INTEREST
+  </header>
+  <nav id="top-nav">
+    <ul>
+      <li><a href="index.html">Guided discovery</a></li>
+      <li><a href="simple-interest.html">Simple interest</a></li>
+      <li><a href="compound-interest.html">Compound interest</a></li>
+      <li><a href="practice-1.html">Practice 1</a></li>
+      <li><a href="practice-2.html">Practice 2</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1>Practice: Lottery and Bank Savings</h1>
+    <div id="content">
+      <p>One afternoon without homework, you pass by a lottery store in Pittsburgh and buy a ticket and scratch it off.</p>
+      <div id="lottery-image">Lottery image</div>
+      <div id="question">
+        <p>You are going to save it in the PNC bank. The bank manager recommends 4 plans:</p>
+        <div id="options">
+          <button onclick="onSelectOption(this)">
+            <h1>Plan A</h1>
+            <p>Investing your money at a simple interest rate of 9% for 2 years.</p>
+          </button>
+          <button onclick="onSelectOption(this)">
+            <h1>Plan B</h1>
+            <p>Investing your money at 12% per year compounded per month for 17 months.</p>
+          </button>
+          <button onclick="onSelectOption(this)">
+            <h1>Plan C</h1>
+            <p>Investing your money at 9% per year compounded per month for 2 years.</p>
+          </button>
+          <button onclick="onSelectOption(this)">
+            <h1>Plan D</h1>
+            <p>Investing your money at a simple interest rate of 19% for 1 year.</p>
+          </button>
+        </div>
+        <p>For the plan you choose, you should pay final amounts: <input id="final-amount" type="number" onfocusout="updateSubmitButton()"></p>
+        <button class="disabled" id="submit-button" onclick="showFeedbackIfCompletedQuestion('feedback')">Submit</button>
+        <div id="feedback" class="feedback">
+          <p>Plan1: 2500*(1+9%*2)=2950</p>
+          <p>Plan2: 12%/12=1%; 2500*(1+1%) ^ 17= 2960.75</p>
+          <p>Plan3: 9%/12=0.75%; 2500*(1+0.75%)^24=2991</p>
+          <p>Plan4: 2500*(1+19%*1)= 2975 </p>
+          <p>Plan3&#62;Plan4&#62;Plan2&#62;Plan1</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav id="bottom-nav">
+    <ul>
+      <li><a href="simple-interest.html">Previous page</a></li>
+      <li><a href="practice-2.html">Next page</a></li>
+    </ul>
+  </nav>
+  <script src="js/common.js"></script>
+  <script src="js/practice.js"></script>
+</body>
+</html>

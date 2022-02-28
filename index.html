@@ -1,0 +1,88 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <header>
+    SIMPLE AND COMPOUND INTEREST
+  </header>
+  <nav id="top-nav">
+    <ul>
+      <li><a href="index.html">Guided discovery</a></li>
+      <li><a href="instruction-simple-interest.html">Simple interest</a></li>
+      <li><a href="instruction-compound-interest.html">Compound interest</a></li>
+      <li><a href="practice-1.html">Practice 1</a></li>
+      <li><a href="practice-2.html">Practice 2</a></li>
+    </ul>
+  </nav>
+  <div id="content">
+    <section id="atm">
+      <h1>Introduction</h1>
+      <p>Welcome to TOL Bank! When you deposit money with us, you will earn money over time! That is called an interest. Now you have $ 500 in our ATM, you can adjust interest rate and the time you want to deposit money.</p>
+      <div id="atm">
+        <h1>TOL BANK ATM</h1>
+        <div id="inputs">
+          <div id="field">
+            <h2>Principal</h2>
+            $ <input type="number" id="principal" onfocusout="updateAtmFinalOutcome()">
+          </div>
+          <div>
+            <h2>Interest rate</h2>
+            <input type="number" id="interest" onfocusout="updateAtmFinalOutcome()"> %
+          </div>
+          <div>
+            <h2>Time (yrs)</h2>
+            <input type="number" id="time" onfocusout="updateAtmFinalOutcome()"> %
+          </div>
+        </div>
+        <div>
+          <h2>Final Outcome</h2>
+          <p>$ <span id="final-outcome">N/A</span></p</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <nav id="questions-nav">
+        <ul>
+          <li class="selected" id="discover-1" onclick="switchQuestion(0)">Discover 1</li>
+          <li id="discover-2" onclick="switchQuestion(1)">Discover 2</li>
+          <li id="discover-3" onclick="switchQuestion(2)">Discover 3</li>
+        </ul>
+      </nav>
+      <div>
+        <h1>Interest rate with final amount</h1>
+        <p id="mc-question">1. If everything else is the same, what happens to your final amount when you increase the interest rate? </p>
+        <form>
+          <label onclick="showFeedback('mc-feedback')">
+            <input type="radio" name="mc">
+            <span id="option-1">The final amount increases</span>
+          </label>
+          <br>
+          <label onclick="showFeedback('mc-feedback')">
+            <input type="radio" name="mc">
+            <span id="option-2">The final amount is the same</span>
+          </label>
+          <br>
+          <label onclick="showFeedback('mc-feedback')">
+            <input type="radio" name="mc">
+            <span id="option-3">The final amount decreases</span>
+          </label>
+        </form>
+        <p class="feedback" id="mc-feedback">Correct answer: The final amount increases</p>
+
+        <p id="short-response-question">2. What do you think the term “interest rate” means?</p>
+        <input id="short-response-answer" type="text" onfocusout="showFeedback('short-response-feedback')">
+        <p class="feedback" id="short-response-feedback">Interest rate is the percentage a person will earn for lending out money. In this case, you are lending your money to us by depositing your money!</p>
+      </div>
+      <button id="next-question-button" onclick="onSelectNext()">Next</button>
+      <button id="next-page-button"><a href="instruction-simple-interest.html">Next page</a></button>
+    </section>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

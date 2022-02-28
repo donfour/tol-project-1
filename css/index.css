@@ -1,0 +1,30 @@
+div#content {
+  display: flex;
+  gap: 150px;
+}
+
+div#content section {
+  flex: 1;
+}
+
+div#atm h1 {
+  text-align: center
+}
+
+div#inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav#questions-nav:hover {
+  cursor: pointer;
+}
+
+nav#questions-nav li.selected {
+  color: orangered;
+}
+
+button#next-page-button {
+  display: none;
+}

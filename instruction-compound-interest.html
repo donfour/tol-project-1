@@ -1,0 +1,169 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/instruction.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <header>
+    SIMPLE AND COMPOUND INTEREST
+  </header>
+  <nav id="top-nav">
+    <ul>
+      <li><a href="index.html">Guided discovery</a></li>
+      <li><a href="instruction-simple-interest.html">Simple interest</a></li>
+      <li><a href="instruction-compound-interest.html">Compound interest</a></li>
+      <li><a href="practice-1.html">Practice 1</a></li>
+      <li><a href="practice-2.html">Practice 2</a></li>
+    </ul>
+  </nav>
+  <div id="content">
+    <section>
+      <h1>What is Compound Interest?</h1>
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Explain terminologies (periods, interest, principal amount, interest rate, time, and amount) related to compound interest.</li>
+        <li>Calculate the final value of compound interest with a dependent variable by using the given independent variables.</li>
+      </ul>
+
+      <h2>Case study</h2>
+      <p>Donovan plans to invest his money into a bank to earn some interest. The bank staff tells him if he wants to deposit for a long time he can choose a compound interest plan. He deposits $1,000 at 12% per year compounded per month. How much interest will be paid from our account after 16 months?</p>
+      <h2>Solutions</h2>
+      <p>To calculate the interest based on compound interest, you should first figure out the concept of“period”, which is a time variable referring to how many time units are in this investment. Then, you can calculate interest rate each period (i), and how many periods for your savings (n).</p>
+      <ol>
+        <li>
+          <div>
+            <p>Periods number: n</p>
+            <span>→</span>
+            <p>n = 16 as each month is one period</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Interest rate each period: i = r / m</p>
+            <span>→</span>
+            <p>i = r / m = 12% / <input name="case-study-1" type="number" onfocusout="showFeedbackIfAllFilledIn('case-study-1', 'case-study-1-feedback')"> = 1%</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Interest rate per year: r</p>
+            <span>→</span>
+            <p>r = 12%</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Compounded times per year: m</p>
+            <span>→</span>
+            <p>m = 12</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Calculate the A= Amount (future value) with the formula:  A = P+ I </p>
+            <span>→</span>
+            <p>A = 300 + 45 = 345</p>
+          </div>
+        </li>
+      </ol>
+      <div id="case-study-1-feedback" class="feedback">
+        <p>Step 2: m = 12</p>
+      </div>
+
+      <p>After you figure out the period variables, you can calculate the amount by the formula A(n) = P(1 + i)^n. And the overall interest is the value I = A(n) - P.</p>
+      <ol>
+        <li>
+          <div>
+            <p>Principal (initial): P</p>
+            <span>→</span>
+            <p>P = 1000</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Amount: A(n) = P(1 +i)^n</p>
+            <span>→</span>
+            <p>A(n) = P(1 +i)^n = <input name="case-study-2" type="number" onfocusout="showFeedbackIfAllFilledIn('case-study-2', 'case-study-2-feedback')"> (1+1%)^16 = 1172.6</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Interests: I = A(n) - P</p>
+            <span>→</span>
+            <p>I = A(n) - P = 1172.6 - 1000 = 172.6</p>
+          </div>
+        </li>
+      </ol>
+      <div id="case-study-2-feedback" class="feedback">
+        <p>Step 2: P = 1000</p>
+      </div>
+
+      <h1>Summary</h1>
+      <p>In this worked example, we learn more variables:</p>
+      <ul>
+        <li>Periods number: n</li>
+        <li>Interest rate each period: i = r/m</li>
+        <li>Interest rate per year: r</li>
+        <li>Compounded times per year: m</li>
+        <li>The amount in the account after n periods: A(n)</li>
+      </ul>
+      <p>And the formula we have used:</p>
+      <ul>
+        <li>If an initial principal P is invested at an interest rate r compounded m times per year, then the amount in the account after n periods is A(n) = P(1 +i)^n.</li>
+        <li>Interest: I = A(n) - P</li>
+      </ul>
+
+      <h1>Practices with Simple and Compound Interests</h1>
+      <section>
+        <h1>Question 1</h1>
+        <p>Imagine you loan $2,000 at 6% per year compounded per month.</p>
+        <p>a. How many periods are there in ten months?</p>
+        <input name="question-1a" type="number" onfocusout="showFeedbackIfAllFilledIn('question-1a', 'question-1a-feedback')">
+        <p>b. How many interest rates each period?</p>
+        <input name="question-1b" type="number" onfocusout="showFeedbackIfAllFilledIn('question-1b', 'question-1b-feedback')">
+        <p>c. How much will be paid from your account after ten months?</p>
+        <input name="question-1c" type="number" onfocusout="showFeedbackIfAllFilledIn('question-1c', 'question-1c-feedback')">
+      </section>
+      <div id="question-1a-feedback" class="feedback">n = 10, as each month is one period.</div>
+      <div id="question-1b-feedback" class="feedback">Interest rate per year “r” is 6%, compounded times per year “m” is 12.</div>
+      <div id="question-1c-feedback" class="feedback">Initial principal is 2000. Combined with the variables above, we can calculate the principal amount A(n) = P(1+i)^n = 2000 (1+0.5%)^10 = 2102.3.</div>
+
+      <section>
+        <h1>Question 2</h1>
+        <p>Suppose you deposit $3,000 at 12% per year compounded per month. How much will be paid from your account after 8 months?</p>
+        <input name="question-2" type="number" onfocusout="showFeedbackIfAllFilledIn('question-2', 'question-2-feedback')">
+      </section>
+      <div id="question-2-feedback" class="feedback">
+        Interest rate per year “r” is 12%, compounded times per year “m” is 12; As a result, the interest rates i = r / m = 12% / 12 = 1%. Combined with the Initial principal “p” is 3000, we can calculate the principal amount A(n) = P(1 + i )^ n = 3000 (1+1%)^ 8 = 3248.5.
+      </div>
+
+      <section>
+        <h1>Question 3</h1>
+        <p>You invest $500 at 6% simple interest for one year. Ivy invests $500 at a rate of 6% compounded monthly for one year.</p>
+        <input name="question-3a" type="number" onfocusout="showFeedbackIfAllFilledIn('question-3a', 'question-3a-feedback')">
+        <p>How much money will Ivy have after one year?</p>
+        <input name="question-3b" type="number" onfocusout="showFeedbackIfAllFilledIn('question-3b', 'question-3b-feedback')">
+      </section>
+      <div id="question-3a-feedback" class="feedback">
+        Interest rate per year “r” is 6%; investment time “t” is 1; Initial principal “p” is 500. As a result, we can calculate the principal amount A= 500*(1+6%*1) = 530.
+      </div>
+      <div id="question-3b-feedback" class="feedback">
+        Interest rate per year “r” is 6%, compounded times per year “m” is 12; As a result, the interest rates i = r / m = 6% / 12 = 0.5%. Combined with the Initial principal “p” is 500, we can calculate the principal amount A(n) = P(1 + i )^ n = 500 (1+1%)^ 12 = 563.4.
+      </div>
+
+      <h1>Learn more</h1>
+      <p>Want to see more about which interests plan to grow faster? You can check <a href="https://www.txstate.edu/mathworks/ME-Curriculum/math-explorations-for-teachers/online-learning-tools/personal-financial-literacy/math-of-finance-7th-grade-teks/interest.html">this link</a> to learn more.</p>
+    </section>
+    <nav id="bottom-nav">
+      <ul>
+        <li><a href="instruction-simple-interest.html">Previous page</a></li>
+        <li><a href="practice-1.html">Next page</a></li>
+      </ul>
+    </nav>
+  </div>
+  <script src="js/common.js"></script>
+</body>
+</html>

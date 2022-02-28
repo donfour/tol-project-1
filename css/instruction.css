@@ -1,0 +1,13 @@
+ol li div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ol li div p {
+  flex: 1;
+}
+
+ol li div span {
+  flex: 0.1;
+}
