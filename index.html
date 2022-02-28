@@ -20,28 +20,35 @@
     </ul>
   </nav>
   <div id="content">
-    <section id="atm">
+    <section>
       <h1>Introduction</h1>
       <p>Welcome to TOL Bank! When you deposit money with us, you will earn money over time! That is called an interest. Now you have $ 500 in our ATM, you can adjust interest rate and the time you want to deposit money.</p>
       <div id="atm">
         <h1>TOL BANK ATM</h1>
-        <div id="inputs">
-          <div id="field">
-            <h2>Principal</h2>
-            $ <input type="number" id="principal" onfocusout="updateAtmFinalOutcome()">
+        <div id="atm-body">
+          <button id="toggle-button" onclick="onToggleButton(this); updateAtmFinalOutcome();" type="button" class="btn btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+            <div class="handle"></div>
+          </button>
+          <div id="inputs">
+            <div>
+              <h2>Principal</h2>
+              <div class="field">
+                $ <input type="number" id="principal" onfocusout="updateAtmFinalOutcome()">
+              </div>
+            </div>
+            <div class="field">
+              <h2>Interest rate</h2>
+              <input type="number" id="interest" onfocusout="updateAtmFinalOutcome()"> %
+            </div>
+            <div class="field">
+              <h2>Time (yrs)</h2>
+              <input type="number" id="time" onfocusout="updateAtmFinalOutcome()"> %
+            </div>
           </div>
-          <div>
-            <h2>Interest rate</h2>
-            <input type="number" id="interest" onfocusout="updateAtmFinalOutcome()"> %
+          <div id="final-outcome-container">
+            <h2>Final Outcome</h2>
+            <p>$ <span id="final-outcome">N/A</span></p>
           </div>
-          <div>
-            <h2>Time (yrs)</h2>
-            <input type="number" id="time" onfocusout="updateAtmFinalOutcome()"> %
-          </div>
-        </div>
-        <div>
-          <h2>Final Outcome</h2>
-          <p>$ <span id="final-outcome">N/A</span></p</p>
         </div>
       </div>
     </section>

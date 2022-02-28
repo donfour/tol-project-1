@@ -1,12 +1,14 @@
 function updateAtmFinalOutcome() {
-  console.log("hi")
   const principal = document.getElementById("principal").value;
   const interest = document.getElementById("interest").value;
   const time = document.getElementById("time").value;
+  const isCompoundInterest = document.getElementById("toggle-button").classList.contains("active");
 
   let finalOutcome;
   if(principal && interest && time) {
-    finalOutcome = (principal * (1 + interest/100 * time)).toFixed(2);
+    finalOutcome = isCompoundInterest ?
+      (principal * (1 + interest/100) ** time).toFixed(2) :
+      (principal * (1 + interest/100 * time)).toFixed(2);
   } else {
     finalOutcome = "N/A";
   }
@@ -94,4 +96,8 @@ function clearAnswers() {
   for(const element of document.getElementsByName("mc")) {
     element.checked = false;
   }
+}
+
+function onToggleButton(element) {
+  element.classList.toggle("active");
 }
