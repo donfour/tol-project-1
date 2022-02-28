@@ -10,7 +10,7 @@ Shared CSS: `common.css`
 Shared JS: `common.js`
 
 # How to clone
-1. `git clone <url>`
+1. `git clone https://github.com/donfour/tol-project-1.git`
 
 # How to push to git
 1. Make changes
