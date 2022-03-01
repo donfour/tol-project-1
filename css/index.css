@@ -7,7 +7,7 @@ div#content section {
   flex: 1;
 }
 
-section#left-panel h1 {
+section#left-panel > h1 {
   margin-top: 0;
 }
 
