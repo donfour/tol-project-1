@@ -9,6 +9,7 @@ div#content section {
 
 section#left-panel > h1 {
   margin-top: 0;
+  color: #442927;
 }
 
 div#atm {
@@ -131,6 +132,7 @@ section#right-panel {
 
 section#right-panel h1 {
   font-size: large;
+  color: #442927;
 }
 
 div#next-button-container {

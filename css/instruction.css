@@ -1,3 +1,84 @@
+/* font format settings */
+
+body{
+  background: #FAF8F6;
+}
+
+h1 {
+padding-top: 0.67rem;
+margin-left: 1rem;
+margin-bottom: 0.4rem;
+font-size: 2rem;
+color: #442927;
+}
+
+h2{
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #442927;
+}
+
+p{
+  font-size: 1 rem;
+  color: #442927;
+}
+
+img{
+  height:100%;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+
+ol li div span{
+  padding-left: 2rem;
+}
+
+ul li {
+  font-size: 1 rem;
+  color: #442927;
+}
+
+
+ol li div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ol li div p {
+  flex: 1;
+  margin: 0.3rem;
+  padding-left: 1rem;
+  padding-top: 0.67rem;
+  padding-bottom: 0.67rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 167, 167, 0.1);
+}
+
+ol li div span {
+  flex: 0.1;
+}
+
+section section {
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  margin-bottom: 1.2rem;
+}
+
+section section input {
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 0.2em;
+}
+
 ol li div {
   display: flex;
   align-items: center;
@@ -10,4 +91,30 @@ ol li div p {
 
 ol li div span {
   flex: 0.1;
+}
+
+div#title {
+  display: flex;
+}
+
+div input{
+  margin-left: 0.4rem;
+  height: 2rem;
+  width: 4rem;
+  border-radius: 0.2em;
+}
+
+div#question-1-feedback{
+  padding-left: 2rem;
+  padding-right: 13rem;
+}
+
+div#question-2-feedback{
+  padding-left: 2rem;
+  padding-right: 13rem;
+}
+
+div#question-3-feedback{
+  padding-left: 2rem;
+  padding-right: 13rem;
 }

@@ -79,12 +79,16 @@
     </ul>
   </nav>
   <section>
-    <h1>Practice: Bubble Tea and Bank Loan</h1>
+    <h1>Bubble Tea and Bank Loan</h1>
     <div id="content">
       <p>You found that People in Pittsburgh love bubble tea very much, so you are planning to open a bubble tea shop called DRIDRI. You talked with the owner of  Kungfu Tea and got to know “you need $ 15,000 to start a bubble tea store.</p>
-      <div id="lottery-image">Bubble tea image</div>
+      <div id="cover">
+        <img src="img/bubble.png" alt="lecture icon">
+      </div>
       <div id="question">
+        <div id="description">
         <p>You are going to loan startup money at Chase, the bank manager recommends 4 plans:</p>
+        </div>
         <div id="options">
           <button onclick="onSelectOption(this)">
             <h1>Plan A</h1>
@@ -104,7 +108,11 @@
           </button>
         </div>
         <p>For the plan you choose, you should pay final amounts: <input id="final-amount" type="number" onfocusout="updateSubmitButton()"></p>
+       
+        <div id="submit">
         <button class="primary disabled" id="submit-button" onclick="showFeedbackIfCompletedQuestion('feedback')">Submit</button>
+        </div>
+
         <div id="feedback" class="feedback">
           <p>Plan1: 18%/12=1.5%; 15000*(1+1.5%)^3=15685.2</p>
           <p>Plan2: 12%/12=1%; 15000*(1+1%)^5=15765.2</p>
