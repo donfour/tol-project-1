@@ -52,41 +52,43 @@
         </div>
       </div>
     </section>
-    <section>
-      <nav id="questions-nav">
-        <ul>
-          <li class="selected" id="discover-1" onclick="switchQuestion(0)">Discover 1</li>
-          <li id="discover-2" onclick="switchQuestion(1)">Discover 2</li>
-          <li id="discover-3" onclick="switchQuestion(2)">Discover 3</li>
-        </ul>
-      </nav>
+    <section id="right-panel">
       <div>
-        <h1>Interest rate with final amount</h1>
-        <p id="mc-question">1. If everything else is the same, what happens to your final amount when you increase the interest rate? </p>
-        <form>
-          <label onclick="showFeedback('mc-feedback')">
-            <input type="radio" name="mc">
-            <span id="option-1">The final amount increases</span>
-          </label>
-          <br>
-          <label onclick="showFeedback('mc-feedback')">
-            <input type="radio" name="mc">
-            <span id="option-2">The final amount is the same</span>
-          </label>
-          <br>
-          <label onclick="showFeedback('mc-feedback')">
-            <input type="radio" name="mc">
-            <span id="option-3">The final amount decreases</span>
-          </label>
-        </form>
-        <p class="feedback" id="mc-feedback">Correct answer: The final amount increases</p>
-
-        <p id="short-response-question">2. What do you think the term “interest rate” means?</p>
-        <input id="short-response-answer" type="text" onfocusout="showFeedback('short-response-feedback')">
-        <p class="feedback" id="short-response-feedback">Interest rate is the percentage a person will earn for lending out money. In this case, you are lending your money to us by depositing your money!</p>
+        <nav id="questions-nav">
+          <ul>
+            <li class="selected" id="discover-1" onclick="switchQuestion(0)">Discover 1</li>
+            <li id="discover-2" onclick="switchQuestion(1)">Discover 2</li>
+            <li id="discover-3" onclick="switchQuestion(2)">Discover 3</li>
+          </ul>
+        </nav>
+        <div>
+          <h1>Interest rate with final amount</h1>
+          <p id="mc-question">1. If everything else is the same, what happens to your final amount when you increase the interest rate? </p>
+          <form>
+            <label onclick="showFeedback('mc-feedback')">
+              <input type="radio" name="mc">
+              <span id="option-1">The final amount increases</span>
+            </label>
+            <label onclick="showFeedback('mc-feedback')">
+              <input type="radio" name="mc">
+              <span id="option-2">The final amount is the same</span>
+            </label>
+            <label onclick="showFeedback('mc-feedback')">
+              <input type="radio" name="mc">
+              <span id="option-3">The final amount decreases</span>
+            </label>
+          </form>
+          <p class="feedback" id="mc-feedback">Correct answer: The final amount increases</p>
+  
+          <p id="short-response-question">2. What do you think the term “interest rate” means?</p>
+          <input id="short-response-answer" type="text" onfocusout="showFeedback('short-response-feedback')">
+          <p class="feedback" id="short-response-feedback">Interest rate is the percentage a person will earn for lending out money. In this case, you are lending your money to us by depositing your money!</p>
+        </div>
       </div>
-      <button id="next-question-button" onclick="onSelectNext()">Next</button>
-      <button id="next-page-button"><a href="instruction-simple-interest.html">Next page</a></button>
+      <div id="next-button-container">
+        <button class="primary" id="next-question-button" onclick="onSelectNext()">Next</button>
+        <button id="next-page-button"><a href="instruction-simple-interest.html">Next page</a></button>
+      </div>
     </section>
   </div>
   <script src="js/common.js"></script>

@@ -32,15 +32,3 @@ div#options button.selected {
   border: 1px solid #F37D59;
 }
 
-button#submit-button {
-  background-color: #F37D59;
-  border-radius: 5rem;
-  border: none;
-  padding: 0.5rem 1rem;
-  color: white;
-}
-
-button#submit-button.disabled {
-  background-color: #E0DEDC;
-  color: #1C1B1F;
-}

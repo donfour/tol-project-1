@@ -62,12 +62,27 @@ div#inputs {
   width: 100%;
 }
 
+nav#questions-nav {
+  margin-bottom: 3rem;
+}
+
+nav#questions-nav ul {
+  display: block;
+}
+
 nav#questions-nav:hover {
   cursor: pointer;
 }
 
+nav#questions-nav li {
+  padding: 0 1rem 0.5rem;
+  border-bottom: 2px solid #EFECEA;
+  margin: -2px;
+}
+
 nav#questions-nav li.selected {
   color: #F37D59;
+  border-bottom: 2px solid #F37D59;
 }
 
 button#next-page-button {
@@ -79,6 +94,19 @@ div#final-outcome-container {
   width: 100%;
 }
 
+label {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+p#short-response-question {
+  margin-top: 2rem;
+}
+
+input#short-response-answer {
+  width: 100%;
+}
+
 div#final-outcome-container * {
   color: #F37D59;
   margin-left: 1rem;
@@ -86,6 +114,33 @@ div#final-outcome-container * {
 
 div#final-outcome-container p {
   font-size: xx-large;
+}
+
+section#right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#right-panel h1 {
+  font-size: large;
+}
+
+div#next-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button#next-page-button {
+  background-color: #442927;
+  color: white;
+  border-radius: 0.2rem;
+  padding: 0.3rem 1rem;
+}
+
+button#next-page-button a {
+  color: white;
+  text-decoration: none;
 }
 
 /* Styles for toggle. Credits: https://codepen.io/aanjulena/pen/ZLZjzV */
