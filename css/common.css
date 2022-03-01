@@ -11,16 +11,59 @@ header {
   color: #A89899;
 }
 
-nav ul {
+nav#top-nav {
+  margin-bottom: 4rem;
+}
+
+nav#top-nav ul {
   display:inline;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
-nav li {
+nav#top-nav div.horizontal-bar {
+  height: 0.3rem;
+  position: relative;
+  top: 2.6rem;
+  width: 100%;
+  height: 0.3rem;
+  z-index: -1;
+  background-color: #442927;
+}
+
+nav#top-nav div.nav-step-with-icon {
+  background-color: #442927;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav#top-nav div.nav-step {
+  background-color: #442927;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+nav#top-nav li {
   display:inline;
+}
+
+nav#top-nav a {
+  position: relative;
+  top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #442927;
 }
 
 .feedback {
