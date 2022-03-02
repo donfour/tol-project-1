@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>TOL Project 1</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/instruction.css">
   <link rel="stylesheet" href="css/common.css">
@@ -45,8 +45,8 @@
       </li>
       <li>
         <a href="instruction-compound-interest.html">
-          <div class="nav-step"></div>
-          <span>Compound interest</span>
+          <div class="nav-step active-step"></div>
+          <span class="active-step">Compound interest</span>
         </a>
       </li>
       <li>
@@ -80,8 +80,10 @@
   </nav>
   <div id="content">
     <section>
-      <div id= title>
-        <img src="img/payments.jpg" alt="lecture icon">
+      <div class="header-group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25.3334 18.6666V7.99992C25.3334 6.53325 24.1334 5.33325 22.6667 5.33325H4.00004C2.53337 5.33325 1.33337 6.53325 1.33337 7.99992V18.6666C1.33337 20.1333 2.53337 21.3333 4.00004 21.3333H22.6667C24.1334 21.3333 25.3334 20.1333 25.3334 18.6666ZM22.6667 18.6666H4.00004V7.99992H22.6667V18.6666ZM13.3334 9.33325C11.12 9.33325 9.33337 11.1199 9.33337 13.3333C9.33337 15.5466 11.12 17.3333 13.3334 17.3333C15.5467 17.3333 17.3334 15.5466 17.3334 13.3333C17.3334 11.1199 15.5467 9.33325 13.3334 9.33325ZM30.6667 9.33325V23.9999C30.6667 25.4666 29.4667 26.6666 28 26.6666H5.33337C5.33337 25.3333 5.33337 25.4666 5.33337 23.9999H28V9.33325C29.4667 9.33325 29.3334 9.33325 30.6667 9.33325Z" fill="#442927"/>
+        </svg>
         <h1>What is Compound Interest?</h1>
       </div>
       <h2>Learning Objectives</h2>
@@ -163,12 +165,14 @@
         <p>Step 2: P = 1000</p>
       </div>
 
-     
-      <div id=title>
-        <img src="img/border_color.jpg" alt="lecture icon">
+      <div class="header-group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.4133 10.5866L17.4133 5.58659L5.33329 17.6666V22.6666H10.3333L22.4133 10.5866ZM7.99996 19.9999V18.7733L17.4133 9.35992L18.64 10.5866L9.22663 19.9999H7.99996Z" fill="#442927"/>
+          <path d="M26.28 6.71992C26.8 6.19992 26.8 5.35992 26.28 4.83992L23.16 1.71992C22.8933 1.45325 22.56 1.33325 22.2133 1.33325C21.88 1.33325 21.5333 1.46659 21.28 1.71992L18.84 4.15992L23.84 9.15992L26.28 6.71992Z" fill="#442927"/>
+          <path d="M29.3333 25.3333H2.66663V30.6666H29.3333V25.3333Z" fill="#442927"/>
+        </svg>
         <h1>Practices with Simple and Compound Interests</h1>
       </div>
-      
       <section>
         <h2>Question 1</h2>
         <p>Imagine you loan $2,000 at 6% per year compounded per month.</p>
@@ -195,42 +199,67 @@
       <section>
         <h2>Question 3</h2>
         <p>You invest $500 at 6% simple interest for one year. Ivy invests $500 at a rate of 6% compounded monthly for one year.</p>
+        <p>a. How much money will you have after one year?</p>
         <input name="question-3a" type="number" onfocusout="showFeedbackIfAllFilledIn('question-3a', 'question-3a-feedback')">
-        <p>How much money will Ivy have after one year?</p>
+        <p>b. How much money will Ivy have after one year?</p>
         <input name="question-3b" type="number" onfocusout="showFeedbackIfAllFilledIn('question-3b', 'question-3b-feedback')">
       </section>
       <div id="question-3a-feedback" class="feedback">
-        Interest rate per year “r” is 6%; investment time “t” is 1; Initial principal “p” is 500. As a result, we can calculate the principal amount A= 500*(1+6%*1) = 530.
+        a. Interest rate per year “r” is 6%; investment time “t” is 1; Initial principal “p” is 500. As a result, we can calculate the principal amount A= 500*(1+6%*1) = 530.
       </div>
       <div id="question-3b-feedback" class="feedback">
-        Interest rate per year “r” is 6%, compounded times per year “m” is 12; As a result, the interest rates i = r / m = 6% / 12 = 0.5%. Combined with the Initial principal “p” is 500, we can calculate the principal amount A(n) = P(1 + i )^ n = 500 (1+1%)^ 12 = 563.4.
+        b. Interest rate per year “r” is 6%, compounded times per year “m” is 12; As a result, the interest rates i = r / m = 6% / 12 = 0.5%. Combined with the Initial principal “p” is 500, we can calculate the principal amount A(n) = P(1 + i )^ n = 500 (1+1%)^ 12 = 563.4.
       </div>
-      <div id=title>
-        <img src="img/summarize.jpg" alt="lecture icon">
+
+      <div class="header-group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H6.66667C5.2 4 4.01333 5.2 4.01333 6.66667L4 25.3333C4 26.8 5.18667 28 6.65333 28H25.3333C26.8 28 28 26.8 28 25.3333V12L20 4ZM6.66667 25.3333V6.66667H18.6667V13.3333H25.3333V25.3333H6.66667ZM12 10.6667C12 11.4 11.4 12 10.6667 12C9.93333 12 9.33333 11.4 9.33333 10.6667C9.33333 9.93333 9.93333 9.33333 10.6667 9.33333C11.4 9.33333 12 9.93333 12 10.6667ZM12 16C12 16.7333 11.4 17.3333 10.6667 17.3333C9.93333 17.3333 9.33333 16.7333 9.33333 16C9.33333 15.2667 9.93333 14.6667 10.6667 14.6667C11.4 14.6667 12 15.2667 12 16ZM12 21.3333C12 22.0667 11.4 22.6667 10.6667 22.6667C9.93333 22.6667 9.33333 22.0667 9.33333 21.3333C9.33333 20.6 9.93333 20 10.6667 20C11.4 20 12 20.6 12 21.3333Z" fill="#442927"/>
+        </svg>
         <h1>Summary</h1>
       </div>
-  
-      <p>In this worked example, we learn more variables:</p>
-      <ul>
-        <li>Periods number: n</li>
-        <li>Interest rate each period: i = r/m</li>
-        <li>Interest rate per year: r</li>
-        <li>Compounded times per year: m</li>
-        <li>The amount in the account after n periods: A(n)</li>
-      </ul>
-      <p>And the formula we have used:</p>
-      <ul>
-        <li>If an initial principal P is invested at an interest rate r compounded m times per year, then the amount in the account after n periods is A(n) = P(1 +i)^n.</li>
-        <li>Interest: I = A(n) - P</li>
-      </ul>
+      <div class="summary-content">
+        <div>
+          <p>In this worked example, we learn more variables:</p>
+          <ul>
+            <li>Periods number: n</li>
+            <li>Interest rate each period: i = r/m</li>
+            <li>Interest rate per year: r</li>
+            <li>Compounded times per year: m</li>
+            <li>The amount in the account after n periods: A(n)</li>
+          </ul>
+          <p>And the formula we have used:</p>
+          <ul>
+            <li>If an initial principal P is invested at an interest rate r compounded m times per year, then the amount in the account after n periods is A(n) = P(1 +i)^n.</li>
+            <li>Interest: I = A(n) - P</li>
+          </ul>
+        </div>
+        <div class="image-group">
+          <img style="height: 300px;" src="./img/simple-vs-compound.png" alt="Graph comparing simple and compound interest growth">
+          <span>Diagram Comparing Simple and Compound Interests</span>
+        </div>
+      </div>
       
       <h2>Learn more</h2>
       <p>Want to see more about which interests plan to grow faster? You can check <a href="https://www.txstate.edu/mathworks/ME-Curriculum/math-explorations-for-teachers/online-learning-tools/personal-financial-literacy/math-of-finance-7th-grade-teks/interest.html">this link</a> to learn more.</p>
     </section>
     <nav id="bottom-nav">
       <ul>
-        <li><a href="instruction-simple-interest.html">Previous page</a></li>
-        <li><a href="practice-1.html">Next page</a></li>
+        <a href="instruction-simple-interest.html">
+          <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.705 7.41L14.295 6L8.29504 12L14.295 18L15.705 16.59L11.125 12L15.705 7.41Z" fill="#1F1F1F"/>
+            </svg>
+            <span>Previous page</span>
+          </li>
+        </a>
+        <a href="practice-1.html">
+          <li>
+            <span>Next page</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z" fill="#FDF2E1"/>
+            </svg>    
+          </li>
+        </a>
       </ul>
     </nav>
   </div>

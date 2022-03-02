@@ -5,11 +5,10 @@ body{
 }
 
 h1 {
-padding-top: 0.67rem;
-margin-left: 1rem;
-margin-bottom: 0.4rem;
-font-size: 2rem;
-color: #442927;
+  padding-top: 0.67rem;
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #442927;
 }
 
 h2{
@@ -93,10 +92,6 @@ ol li div span {
   flex: 0.1;
 }
 
-div#title {
-  display: flex;
-}
-
 div input{
   margin-left: 0.4rem;
   height: 2rem;
@@ -117,4 +112,21 @@ div#question-2-feedback{
 div#question-3-feedback{
   padding-left: 2rem;
   padding-right: 13rem;
+}
+
+div.summary-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+div.image-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.image-group span {
+  margin-top: 1rem;
+  margin-left: 1rem;
 }

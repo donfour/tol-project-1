@@ -1,10 +1,11 @@
 body {
-  margin: 54px 150px 0;
+  margin: 3rem 10rem 8rem;
   background-color: #FAF8F6;
 }
 
 * {
   font-family: 'Roboto', sans-serif;
+  color: #442927;
 }
 
 header {
@@ -15,13 +16,21 @@ nav#top-nav {
   margin-bottom: 4rem;
 }
 
-nav#top-nav ul {
+nav#top-nav span {
+  color: #dad7d4;
+}
+
+nav#top-nav ul, nav#bottom-nav ul {
   display:inline;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+nav#top-nav li, nav#bottom-nav li {
+  display: inline;
 }
 
 nav#top-nav div.horizontal-bar {
@@ -31,11 +40,11 @@ nav#top-nav div.horizontal-bar {
   width: 100%;
   height: 0.3rem;
   z-index: -1;
-  background-color: #442927;
+  background-color: #dad7d4;
 }
 
 nav#top-nav div.nav-step-with-icon {
-  background-color: #442927;
+  background-color: #dad7d4;
   height: 2rem;
   width: 2rem;
   border-radius: 2rem;
@@ -45,15 +54,23 @@ nav#top-nav div.nav-step-with-icon {
 }
 
 nav#top-nav div.nav-step {
-  background-color: #442927;
+  background-color: #dad7d4;
   height: 0.7rem;
   width: 0.7rem;
   border-radius: 0.7rem;
   margin-bottom: 1rem;
 }
 
-nav#top-nav li {
-  display:inline;
+div.active-step {
+  background-color: #442927 !important;
+}
+
+span.active-step {
+  color: #442927 !important;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
 }
 
 nav#top-nav a {
@@ -62,12 +79,57 @@ nav#top-nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
   color: #442927;
 }
 
-.feedback {
-  display: none;
+nav#bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+nav#bottom-nav a {
+  height: 4rem;
+}
+
+nav#bottom-nav a, nav#bottom-nav li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav#bottom-nav a {
+  background-color: #EFECEA;
+}
+
+nav#bottom-nav a:first-child {
+  border-right: 1px solid #D5CECC;
+}
+
+nav#bottom-nav a.borderless {
+  border-right: none;
+}
+
+nav#bottom-nav a:hover {
+  background-color: #442927;
+}
+
+nav#bottom-nav a:hover span {
+  color: #FDF2E1;
+}
+
+nav#bottom-nav a path {
+  fill: #442927;
+}
+
+nav#bottom-nav a:hover path {
+  fill: #FDF2E1;
+}
+
+nav#bottom-nav ul {
+  margin: 0;
 }
 
 button.primary {
@@ -92,7 +154,14 @@ button.primary.disabled:hover {
 }
 
 .feedback {
+  display: none;
   border-radius: 0.3rem;
   background-color: #EFECEA;
   padding: 1rem;
+  margin: 1rem 0;
+}
+
+div.header-group {
+  display: flex;
+  align-items:flex-end
 }

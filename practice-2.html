@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>TOL Project 1</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/practice.css">
   <link rel="stylesheet" href="css/common.css">
@@ -65,8 +65,8 @@
       </li>
       <li>
         <a href="practice-2.html">
-          <div class="nav-step"></div>
-          <span>Practice 2</span>
+          <div class="nav-step active-step"></div>
+          <span class="active-step">Practice 2</span>
         </a>
       </li>
       <li>
@@ -125,8 +125,22 @@
   </section>
   <nav id="bottom-nav">
     <ul>
-      <li><a href="practice-1.html">Previous page</a></li>
-      <li><a href="congradulations.html">Next page</a></li>
+      <a href="practice-1.html">
+        <li>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.705 7.41L14.295 6L8.29504 12L14.295 18L15.705 16.59L11.125 12L15.705 7.41Z" fill="#1F1F1F"/>
+          </svg>
+          <span>Previous page</span>
+        </li>
+      </a>
+      <a href="congradulations.html">
+        <li>
+          <span>Next page</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z" fill="#FDF2E1"/>
+          </svg>    
+        </li>
+      </a>
     </ul>
   </nav>
   <script src="js/common.js"></script>

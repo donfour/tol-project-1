@@ -1,3 +1,7 @@
+input[type="text"] {
+  height: 2rem;
+}
+
 div#content {
   display: flex;
   gap: 10rem;

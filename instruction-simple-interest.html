@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>TOL Project 1</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/instruction.css">
   <link rel="stylesheet" href="css/common.css">
@@ -39,8 +39,8 @@
       </li>
       <li>
         <a href="instruction-simple-interest.html">
-          <div class="nav-step"></div>
-          <span>Simple interest</span>
+          <div class="nav-step active-step"></div>
+          <span class="active-step">Simple interest</span>
         </a>
       </li>
       <li>
@@ -80,8 +80,10 @@
   </nav>
   <div id="content">
     <section>
-      <div id= title>
-        <img src="img/payments.jpg" alt="lecture icon">
+      <div class="header-group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25.3334 18.6666V7.99992C25.3334 6.53325 24.1334 5.33325 22.6667 5.33325H4.00004C2.53337 5.33325 1.33337 6.53325 1.33337 7.99992V18.6666C1.33337 20.1333 2.53337 21.3333 4.00004 21.3333H22.6667C24.1334 21.3333 25.3334 20.1333 25.3334 18.6666ZM22.6667 18.6666H4.00004V7.99992H22.6667V18.6666ZM13.3334 9.33325C11.12 9.33325 9.33337 11.1199 9.33337 13.3333C9.33337 15.5466 11.12 17.3333 13.3334 17.3333C15.5467 17.3333 17.3334 15.5466 17.3334 13.3333C17.3334 11.1199 15.5467 9.33325 13.3334 9.33325ZM30.6667 9.33325V23.9999C30.6667 25.4666 29.4667 26.6666 28 26.6666H5.33337C5.33337 25.3333 5.33337 25.4666 5.33337 23.9999H28V9.33325C29.4667 9.33325 29.3334 9.33325 30.6667 9.33325Z" fill="#442927"/>
+        </svg>
         <h1>What is Simple Interest?</h1>
       </div>
       <h2>Learning Objectives</h2>
@@ -134,8 +136,12 @@
         <p>Step 4: I = 300 * 15% * 1 = 45</p>
       </div>
 
-      <div id=title>
-        <img src="img/border_color.jpg" alt="lecture icon">
+      <div class="header-group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.4133 10.5866L17.4133 5.58659L5.33329 17.6666V22.6666H10.3333L22.4133 10.5866ZM7.99996 19.9999V18.7733L17.4133 9.35992L18.64 10.5866L9.22663 19.9999H7.99996Z" fill="#442927"/>
+          <path d="M26.28 6.71992C26.8 6.19992 26.8 5.35992 26.28 4.83992L23.16 1.71992C22.8933 1.45325 22.56 1.33325 22.2133 1.33325C21.88 1.33325 21.5333 1.46659 21.28 1.71992L18.84 4.15992L23.84 9.15992L26.28 6.71992Z" fill="#442927"/>
+          <path d="M29.3333 25.3333H2.66663V30.6666H29.3333V25.3333Z" fill="#442927"/>
+        </svg>
         <h1>Practices</h1>
       </div>
       
@@ -173,30 +179,53 @@
         <p>The principal amount is: 150 * 2 / ( 1 + 10% * 2 ) = 250.</p>
       </div>
 
-      <div id=title>
-        <img src="img/summarize.jpg" alt="lecture icon">
+      <div class="header-group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H6.66667C5.2 4 4.01333 5.2 4.01333 6.66667L4 25.3333C4 26.8 5.18667 28 6.65333 28H25.3333C26.8 28 28 26.8 28 25.3333V12L20 4ZM6.66667 25.3333V6.66667H18.6667V13.3333H25.3333V25.3333H6.66667ZM12 10.6667C12 11.4 11.4 12 10.6667 12C9.93333 12 9.33333 11.4 9.33333 10.6667C9.33333 9.93333 9.93333 9.33333 10.6667 9.33333C11.4 9.33333 12 9.93333 12 10.6667ZM12 16C12 16.7333 11.4 17.3333 10.6667 17.3333C9.93333 17.3333 9.33333 16.7333 9.33333 16C9.33333 15.2667 9.93333 14.6667 10.6667 14.6667C11.4 14.6667 12 15.2667 12 16ZM12 21.3333C12 22.0667 11.4 22.6667 10.6667 22.6667C9.93333 22.6667 9.33333 22.0667 9.33333 21.3333C9.33333 20.6 9.93333 20 10.6667 20C11.4 20 12 20.6 12 21.3333Z" fill="#442927"/>
+        </svg>
         <h1>Summary</h1>
       </div>
-      
-      <p>In this worked example, we will find several variables:</p>
-      <ul>
-        <li>I=interest</li>
-        <li>p= principal amount</li>
-        <li>r=interest rate</li>
-        <li>t=time (years)</li>
-        <li>A= Amount (future value)</li>
-      </ul>
-      <p>And the formula we have used:</p>
-      <ul>
-        <li>If a principal amount P is invested at an interest rate r for t years, then the simple interest earned will be I = Prt;</li>
-        <li>The future value amount will be A = P+ I;</li>
-        <li>One-step formula to calculate future value: A= P(1 + rt)</li>
-      </ul>
+      <div class="summary-content">
+        <div>
+          <p>In this worked example, we will find several variables:</p>
+          <ul>
+            <li>I=interest</li>
+            <li>p= principal amount</li>
+            <li>r=interest rate</li>
+            <li>t=time (years)</li>
+            <li>A= Amount (future value)</li>
+          </ul>
+          <p>And the formula we have used:</p>
+          <ul>
+            <li>If a principal amount P is invested at an interest rate r for t years, then the simple interest earned will be I = Prt;</li>
+            <li>The future value amount will be A = P+ I;</li>
+            <li>One-step formula to calculate future value: A= P(1 + rt)</li>
+          </ul>
+        </div>
+        <div class="image-group">
+          <img src="./img/simple-interest-graph.png" alt="Graph showing simple interest growth">
+          <span>Diagram of Simple Interest</span>
+        </div>
+      </div>
     </section>
     <nav id="bottom-nav">
       <ul>
-        <li><a href="index.html">Previous page</a></li>
-        <li><a href="instruction-compound-interest.html">Next page</a></li>
+        <a href="index.html">
+          <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.705 7.41L14.295 6L8.29504 12L14.295 18L15.705 16.59L11.125 12L15.705 7.41Z" fill="#1F1F1F"/>
+            </svg>
+            <span>Previous page</span>
+          </li>
+        </a>
+        <a href="instruction-compound-interest.html">
+          <li>
+            <span>Next page</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z" fill="#FDF2E1"/>
+            </svg>    
+          </li>
+        </a>
       </ul>
     </nav>
   </div>
